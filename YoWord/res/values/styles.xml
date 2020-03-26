@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Transparent" >
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.1</item>
+    </style>
+
+    <style name="AppTheme.TransparentDialog" >
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <style name="mytoast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/cutive_mono_insta</item>
+        <item name="stTextSize">15sp</item>
+        <item name="stColorBackground">#a3b092</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">2dp</item>
+        <item name="stStrokeColor">#2e4e22</item>
+        <item name="stIconStart">@drawable/check</item>
+        <item name="stLength">LONG</item> LONG or SHORT
+        <item name="stRadius">10dp</item>
+    </style>
+
+    <style name="scrolltoast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/cutive_mono_insta</item>
+        <item name="stTextSize">10dp</item>
+        <item name="stColorBackground">#587e8c</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">2dp</item>
+        <item name="stStrokeColor">#36747d</item>
+        <item name="stIconStart">@drawable/up_arrow</item>
+        <item name="stIconEnd">@drawable/down_arrow</item>
+        <item name="stLength">LONG</item> LONG or SHORT
+        <item name="stRadius">10dp</item>
+    </style>
+
+    <style name="photoremoved">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#fd2d3f</item>
+        <item name="stFont">@font/cutive_mono_insta</item>
+        <item name="stTextSize">10dp</item>
+        <item name="stColorBackground">#cccccc</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">2dp</item>
+        <item name="stStrokeColor">#587e8c</item>
+        <item name="stIconStart">@drawable/photo_removed</item>
+        <item name="stLength">LONG</item> LONG or SHORT
+        <item name="stRadius">8dp</item>
+    </style>
+
+</resources>

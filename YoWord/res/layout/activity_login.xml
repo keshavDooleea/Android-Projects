@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#587e8c"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:id="@+id/ykd_relative"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ykd"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/splash" />
+
+    </RelativeLayout>
+
+    // username
+    <RelativeLayout
+        android:id="@+id/username"
+        android:visibility="gone"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ykd_relative" >
+
+        <TextView
+            android:id="@+id/usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:text="Name"
+            android:fontFamily="@font/cutive_mono_insta"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_corner"
+            android:layout_below="@id/usernameText"
+            android:padding="5dp"
+            android:fontFamily="@font/fannabella"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    // button
+    <Button
+        android:id="@+id/confirm"
+        android:visibility="gone"
+        android:fontFamily="@font/cutive_mono_insta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textSize="15dp"
+        android:background="@drawable/login_button_corner"
+        android:elevation="20dp"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/username"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>
