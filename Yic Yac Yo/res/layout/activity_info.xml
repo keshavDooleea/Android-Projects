@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/textview_gradient"
+    tools:context=".Info">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/spmT"
+        android:fontFamily="@font/quite_colorful"
+        android:textStyle="bold"
+        android:textColor="#6e83B7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:letterSpacing="0.1"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="8dp"
+        android:text="SINGLE PLAYER MODE"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        > </TextView>
+
+    <TextView
+        android:id="@+id/spmTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#3c6478"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="8dp"
+        android:fontFamily="@font/going_forward"
+        android:text="Forever alone gang\nYou play against the AI\nYou represent Y and AI is O"
+        android:layout_below="@id/spmT"
+        > </TextView>
+
+    <TextView
+        android:id="@+id/mpmT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textColor="#6e83B7"
+        android:fontFamily="@font/quite_colorful"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:letterSpacing="0.1"
+        android:text="MULTIPLAYER MODE"
+        android:layout_below="@id/spmTxt"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        > </TextView>
+
+    <TextView
+        android:id="@+id/mpmTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="8dp"
+        android:textColor="#3c6478"
+        android:fontFamily="@font/going_forward"
+        android:text="You play against another user\nI.e you play against a friend or another person"
+        android:layout_below="@id/mpmT"
+        > </TextView>
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_above="@id/crab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:fontFamily="@font/alphabetized_cassette_tapes"
+        android:padding="8dp"
+        android:text="Keshav Dooleea\n@YKD\n20th to 23rd of Dec 19"
+        android:textAlignment="center"
+        android:textColor="#6a432d"
+        android:layout_marginBottom="-5dp"
+        > </TextView>
+
+    // crab
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/crab"
+        android:layout_marginBottom="1dp"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dancing_crab">
+
+    </pl.droidsonroids.gif.GifImageView>
+
+</RelativeLayout>

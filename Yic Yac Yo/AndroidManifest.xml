@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kesh.yic_yac_yo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/yic_yac_yo_foreground"
+        android:label="Yic Yac Yo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Info"
+            android:theme="@style/AppTheme.Transparent">
+
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false" />
+    </application>
+
+</manifest>

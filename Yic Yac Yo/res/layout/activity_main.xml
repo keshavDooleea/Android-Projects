@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fish"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        // bird
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/small_bird"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/small_bird">
+        </pl.droidsonroids.gif.GifImageView>
+
+        // bird
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/bird"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/bird">
+        </pl.droidsonroids.gif.GifImageView>
+
+        // sea horse
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/horse"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="-170dp"
+            android:layout_above="@id/YoHouseText"
+            android:src="@drawable/sea_horse">
+        </pl.droidsonroids.gif.GifImageView>
+
+        // Title
+        <TextView
+            android:id="@+id/YoHouseText"
+            android:text="Yic Yac Yo"
+            android:textSize="50dp"
+            android:padding="7dp"
+            android:alpha="0.3"
+            android:textAlignment="center"
+            android:fontFamily="@font/dusty_ranch"
+            android:textColor="#0a4d43"
+            android:shadowColor="#082a35"
+            android:shadowDx="16"
+            android:shadowDy="18"
+            android:shadowRadius="8"
+            android:background="@drawable/textview_rectangle"
+            android:elevation="10dp"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        // gold fish
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/YoHouseText" >
+
+            /* GIF */
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gold_fish"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+                android:layout_marginTop="-5dp"
+                android:src="@drawable/bubble_fish">
+            </pl.droidsonroids.gif.GifImageView>
+        </RelativeLayout>
+
+        // red fish
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/red_fish"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/YoHouseText"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="37dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/turning_around_fish">
+        </pl.droidsonroids.gif.GifImageView>
+
+        <Button
+            android:id="@+id/three_btn"
+            android:layout_width="200dp"
+            android:layout_marginBottom="25dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/multiplayer_btn"
+            android:text="single player"
+            android:textStyle="bold"
+            android:textColor="#a3d4c4"
+            android:shadowColor="#3e826c"
+            android:letterSpacing="0.08"
+            android:fontFamily="@font/going_forward"
+            android:shadowDx="7"
+            android:shadowDy="4"
+            android:shadowRadius="8"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttons_3x3"
+            android:textSize="27dp"
+            android:elevation="15dp"
+            >
+        </Button>
+
+        // multiplayer
+        <Button
+            android:id="@+id/multiplayer_btn"
+            android:layout_width="200dp"
+            android:layout_marginBottom="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:text="Multiplayer"
+            android:fontFamily="@font/going_forward"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:textColor="#a3d4c4"
+            android:shadowColor="#3e826c"
+            android:shadowDx="7"
+            android:shadowDy="4"
+            android:shadowRadius="8"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttons_3x3"
+            android:textSize="30dp"
+            android:elevation="15dp"
+            >
+        </Button>
+
+        // seaweed
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/seaWeed"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/multiplayer_btn"
+            android:src="@drawable/seaweed">
+        </pl.droidsonroids.gif.GifImageView>
+
+        // coin
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/seaWeedB"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/multiplayer_btn"
+            android:src="@drawable/seaweedb">
+        </pl.droidsonroids.gif.GifImageView>
+
+        // coin
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/coin"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/multiplayer_btn"
+            android:src="@drawable/coin">
+        </pl.droidsonroids.gif.GifImageView>
+
+        // dolphin
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/dolphin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/dolph">
+        </pl.droidsonroids.gif.GifImageView>
+
+    </RelativeLayout>
+
+    // game board
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:background="@drawable/bsh_panel"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            // Tic tac toe
+            <TextView
+                android:id="@+id/tty_title"
+                android:background="@drawable/tty_panel"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fannabella"
+                android:elevation="15dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="50dp" >
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/score"
+                android:layout_below="@id/tty_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                // Your score
+                <TextView
+                    android:id="@+id/your_score"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/cowboy"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    android:textColor="#b2dfdc"
+                    android:textSize="30dp" >
+                </TextView>
+
+                // AI Score
+                <TextView
+                    android:id="@+id/ai_score"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/cowboy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#d5b5de"
+                    android:textStyle="normal"
+                    android:textSize="30dp" >
+                </TextView>
+            </RelativeLayout>
+
+            // winner
+            <RelativeLayout
+                android:layout_below="@id/score"
+                android:id="@+id/winner"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/winnerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quite_colorful"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="40dp" >
+                </TextView>
+            </RelativeLayout>
+
+            // Grid
+            <GridLayout
+                android:layout_marginTop="13dp"
+                android:layout_below="@id/winner"
+                android:id="@+id/gridLayout"
+                android:elevation="30dp"
+                android:verticalSpacing="5dp"
+                android:horizontalSpacing="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp">
+            </GridLayout>
+
+            //Restart button
+            <Button
+                android:id="@+id/restart"
+                android:layout_below="@id/gridLayout"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restart"
+                android:elevation="20dp"
+                android:textColor="#c2c2c2"
+                android:background="@drawable/buttons_restart"
+                android:layout_centerHorizontal="true">
+            </Button>
+
+            <RelativeLayout
+                android:layout_below="@id/restart"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                // turn
+                <TextView
+                    android:id="@+id/turn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/cowboy"
+                    android:layout_alignParentBottom="true" >
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
